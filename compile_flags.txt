@@ -4,3 +4,5 @@
 -Wpedantic
 -Wshadow
 -Wconversion
+-fsanitize=address
+-fsanitize=undefined
