@@ -3,7 +3,7 @@
 /* fahrenheit to celsius table */
 main()
 {
-    int fahr, celsius;
+    int /* in between gaps*/ fahr, celsius;
     int lower, upper, step;
 
     lower = 0;
@@ -14,7 +14,7 @@ main()
     while (fahr <= upper)
     {
         celsius = 5 * (fahr - 32) / 9;
-        printf("%d\t%d\n", fahr, celsius);
+        /* where tabs can appear? (tabs for indentation) */ printf("%d\t%d\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
