@@ -7,16 +7,16 @@ main()
     float lower, upper, step;
 
     lower = 0;
-    upper = 300;
-    step = 20;
+    upper = 40;
+    step = 4;
 
-    printf("fahr => celsius\n");
+    printf("celsius =>   fahr\n");
 
-    fahr = lower;
-    while (fahr <= upper)
+    celsius = lower;
+    while (celsius <= upper)
     {
-        celsius = (5.0 / 9.0) * (fahr - 32.0);
-        printf("%4.0f\t%7.1f\n", fahr, celsius);
-        fahr = fahr + step;
+        fahr = (celsius * (9.0 / 5.0)) + 32.0;
+        printf("%7.0f    %6.2f\n", celsius, fahr);
+        celsius = celsius + step;
     }
 }
